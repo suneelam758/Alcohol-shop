@@ -1,0 +1,158 @@
+
+<head>
+   
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(11, 2, 22, 1);
+            animation: 2s bod linear infinite;
+        }
+       
+        span{
+            color: aliceblue;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+        input{
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: rgb(243, 190, 190);
+        }
+        input:hover{
+            background-color: rgb(43, 3, 77);
+            color: white;
+        }
+        button{
+                position: relative;
+                display: inline-block;
+                padding: 15px 30px;
+                color: #2196f3;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                text-decoration: none;
+                font-size: 18px;
+                overflow: hidden;
+                transition: 0.2s;
+                cursor: pointer;
+            }
+            button:hover{
+                color: #255784;
+                background: #15012b;
+                box-shadow: 0 0 10px rgb(54, 13, 105), 0 0 40px rgb(50, 14, 94), 0 0 80px rgb(55, 10, 110);
+                
+            }
+            form{
+                height: auto;
+                width: auto;
+            }
+            
+            .box{
+            height: 300px;
+            width: 620px;
+            display: flex;
+            margin-left: 25%;
+            margin-top: 15%;
+        }
+        .z{
+            display: flex;
+        }
+        .u{
+            height: 100px;
+            width: 100px;
+            color: aliceblue;
+            font-size: 80px;
+            text-align: center;
+            border: 2px solid rgb(71, 3, 3);
+            animation: u 3s linear infinite;
+            
+        }
+        @keyframes u{
+            100%{opacity: 0;}
+        }
+        .p{
+            height: 100px;
+            width: 100px;
+            color: aliceblue;
+            font-size: 80px;
+            text-align: center;
+            border: 2px solid rgb(71, 3, 3);
+            margin-left: 10px;
+            animation: u 3s linear infinite;
+            animation-delay: 1s;
+        }
+        .d{
+            height: 100px;
+            width: 100px;
+            color: aliceblue;
+            font-size: 80px;
+            text-align: center;
+            border: 2px solid rgb(71, 3, 3);
+            margin-left: 10px;
+            animation: u 3s linear infinite;
+            animation-delay: 2s;
+        }
+        .a{
+            height: 100px;
+            width: 100px;
+            color: aliceblue;
+            font-size: 80px;
+            text-align: center;
+            border: 2px solid rgb(71, 3, 3);
+            margin-left: 10px;
+            animation: u 3s linear infinite;
+            animation-delay: 3s;
+        }
+        .t{
+            height: 100px;
+            width: 100px;
+            color: aliceblue;
+            font-size: 80px;
+            text-align: center;
+            border: 2px solid rgb(71, 3, 3);
+            margin-left: 10px;
+            animation: u 3s linear infinite;
+            animation-delay: 4s;
+        }
+        .e{
+            height: 100px;
+            width: 100px;
+            color: aliceblue;
+            font-size: 80px;
+            text-align: center;
+            border: 2px solid rgb(71, 3, 3);
+            margin-left: 10px;
+            animation: u 3s linear infinite;
+            animation-delay: 5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="z">
+    
+    <form method="POST" action="/upload">
+        <span>Id:</span><br><input type="text" name="t0" value="<%= data[0].id %>"></br></br>
+
+     <span>company</span><br><input type="text" name="i1" value="<%= data[0].username %>"></br></br>
+
+     <span>type</span><br><input type="text" name="i2" value="<%= data[0].email %>"></br></br>
+
+     <span>price</span><br><input type="text" name="i3" value="<%= data[0].mobile %>"></br></br>
+
+     <span>rating</span><br><input type="text" name="i4" value="<%= data[0].password %>"></br></br>
+
+      <button type="submit">Update</button>
+      
+    </form>
+    <div class="box">
+        <div class="u">U</div>
+        <div class="p">P</div>
+        <div class="d">D</div>
+        <div class="a">A</div>
+        <div class="t">T</div>
+        <div class="e">E</div>
+    </div>
+</div>
+</body>
+</html>

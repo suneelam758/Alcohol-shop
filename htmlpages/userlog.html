@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(11, 2, 22, 1);
+            animation: 2s bod linear infinite;
+        }
+       
+        span{
+            color: aliceblue;
+            font-weight: 900;
+            font-style: italic;
+            font-size: 40px;
+        }
+        input{
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: black;
+        }
+        input:hover{
+            background-color: rgb(233, 193, 193);
+        }
+        button{
+                position: relative;
+                display: inline-block;
+                padding: 15px 30px;
+                color: #2196f3;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                text-decoration: none;
+                font-size: 18px;
+                overflow: hidden;
+                transition: 0.2s;
+            }
+            button:hover{
+                color: #255784;
+                background: #15012b;
+                box-shadow: 0 0 10px rgb(54, 13, 105), 0 0 40px rgb(50, 14, 94), 0 0 80px rgb(55, 10, 110);
+                
+            }
+            form{
+                height: auto;
+                width: auto;
+            }
+            #z{
+                display: flex;
+            }
+            img{
+                width: 900px;
+                height: 650px;
+                padding: 5px 5px 10px;
+                margin-left: 60px;
+            }
+            #msg{
+                text-align: center;
+                color: white;
+                background: black;
+            }
+    </style>
+</head>
+<body>
+    <div id="msg">Dont have an account<a href="uad">Sign Up</a></div>
+    <div id="z">
+    <form action="/ulg" method="POST">
+        <span>Name</span><br><br>
+        <input type="text" placeholder="John Doe" name="i1" required><br><br><br>
+        <span>Email</span><br><br>
+        <input type="email" placeholder="jackdaniel@beer.in" name="i2" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <img src="giphy.webp">
+</div>
+</body>
+</html>

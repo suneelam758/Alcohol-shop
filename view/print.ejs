@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>list</title>
+    <style>
+        body{
+            background:rgb(78, 27, 197)
+        }
+        th{
+            color: rgb(192, 152, 224);
+            font-size: 20px;
+        }
+        table{
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid rgb(243, 215, 215);
+            margin-left: 35%;
+        }
+        a{
+                position: relative;
+                display: inline-block;
+                padding: 15px 30px;
+                color: #f6f8fa;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                text-decoration: none;
+                font-size: 18px;
+                overflow: hidden;
+                transition: 0.2s;
+            }
+            a:hover{
+                color: #255784;
+                background: #15012b;
+                box-shadow: 0 0 10px rgb(54, 13, 105), 0 0 40px rgb(50, 14, 94), 0 0 80px rgb(55, 10, 110);
+                
+            }
+    </style>
+</head>
+<body>
+    <a href="http://localhost:3010/">Log Out</a>
+    <table>
+        <tr><th>Company</th><th>Type</th><th>Price</th><th>Rating</th></tr>
+        <% data.forEach(function(x)
+        {
+            %>
+            <tr><td><%=x.company %></td>
+                <td><%=x.type %></td>
+                <td><%=x.price %></td>
+                <td><%=x.rating %></td>
+                <td> <a href="/edit?id=<%=x.id %>">Edit</a></td>
+                <td> <a href="/del?id=<%=x.id %>">Delete</a></td>
+            </tr>
+        <%
+        })%>
+    </table>
+</body>
+</html>

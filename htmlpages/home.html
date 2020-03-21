@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        background-image: url('alcohol.jpg');
+        background-size: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+  font-size: 18px;
+  background-color: rgba(12, 9, 9, 1);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(247, 9, 9, 1);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(248, 246, 246, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+  }
+
+  .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  .main-nav li {
+      margin: 0;
+  }
+
+  .nav-links {
+      margin-left: 40px;
+  }
+
+  .logo {
+      margin-top: 0;
+  }
+
+  .navbar-toggle {
+      display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+      color: rgb(252, 248, 248);
+  }
+}
+#a{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid whitesmoke;
+    margin-left: 20px;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -1000px;
+    animation: a 1s linear;
+    animation-fill-mode: forwards;
+}
+#b{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid whitesmoke;
+    margin-left: 20px;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -1000px;
+    animation: a 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+#c{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid whitesmoke;
+    margin-left: 20px;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -1000px;
+    animation: a 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
+}
+#d{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid whitesmoke;
+    margin-left: 20px;
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: center;
+    margin-top: -1000px;
+    animation: a 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+#e{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid whitesmoke;
+    margin-left: 20px;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -1000px;
+    animation: a 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+@keyframes a{
+    100%{margin-top: 0px;}
+}
+.cont{
+    display: flex;
+    margin-top: 200px;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fa fa-bars"></i>
+        </span>
+        <a href="#" class="logo">The Hangover</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="log" class="nav-links">Admin Panel</a>
+            </li>
+            <li>
+                <a href="ulg" class="nav-links">Member</a>
+            </li>
+            <li>
+                <a href="contact" class="nav-links">Contact</a>
+            </li>
+        </ul>
+    </nav>
+  <script>
+        let mainNav = document.getElementById('js-menu');
+  let navBarToggle = document.getElementById('js-navbar-toggle');
+  
+  navBarToggle.addEventListener('click', function () {
+   mainNav.classList.toggle('active');
+  });
+  </script>
+  <div class="cont">
+    <div id="a">Beer is by far the most popular alcoholic drink in the world. In 2016, people consumed nearly 50 billion gallons of beer worldwide.</div>
+    <div id="b">Beer is as old as human history. Beer brewing and drinking predate written language.</div>
+    <div id="c">The Czech Republic consumes the most beer per capita of any country in the world, and China consumes the most overall.</div>
+    <div id="d">Though there are hundreds of styles of beer, they all fall into two basic categories: lagers and ales. They are differentiated according to how yeast ferments during the brewing process.</div>
+    <div id="e">In ancient Mesopotamia, beer was associated with religion and ritual and was believed to have magical powers.</div>
+</div>
+</body>
+</html>
